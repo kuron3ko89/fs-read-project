@@ -12,7 +12,11 @@ router.get('/', function(req, res, next) {
   } catch (err) {
     console.error(err)
   }
-  res.render('index', { title: 'Express', copyPasta: array[0] });
+  res.render('index', { 
+    title: 'FS-Read-Project',
+    description: 'This project reads from a .txt file and displays its contents below!',
+    copyPasta: array[0]
+  });
 });
 
 module.exports = router;
